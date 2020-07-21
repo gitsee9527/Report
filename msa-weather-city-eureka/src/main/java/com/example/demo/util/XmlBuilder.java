@@ -16,7 +16,7 @@ public class XmlBuilder {
 		Object xmlObject = null;
 		Reader reader = null;
 		JAXBContext context = JAXBContext.newInstance(clazz);
-		// XML zhuanwei 对象的接口
+		// XML 转为对象的接口
 		Unmarshaller unmarshaller = context.createUnmarshaller();
 		reader = new StringReader(xmlStr);
 		xmlObject = unmarshaller.unmarshal(reader);
